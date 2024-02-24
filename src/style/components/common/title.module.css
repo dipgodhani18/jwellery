@@ -1,0 +1,37 @@
+.titleContainer {
+  padding: 42px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 26px;
+}
+.titleContainer h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #fd405e;
+}
+.titleContainer p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .titleContainer {
+    padding: 36px 16px;
+  }
+  .titleContainer h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .titleContainer h2 {
+    font-size: 16px;
+  }
+  .titleContainer p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}

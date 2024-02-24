@@ -1,0 +1,28 @@
+.sectionContainer {
+  background-image: url(/public/images/bg.png);
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionContainer h1 {
+  font-family: cursive;
+  font-size: 42px;
+  color: rgb(255, 69, 100);
+}
+@media screen and (max-width: 700px) {
+  .sectionContainer {
+    height: 30vh;
+  }
+  .sectionContainer h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sectionContainer {
+    height: 25vh;
+  }
+  .sectionContainer h1 {
+    font-size: 18px;
+  }
+}

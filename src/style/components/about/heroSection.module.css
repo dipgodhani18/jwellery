@@ -1,0 +1,56 @@
+.heroCard {
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+.heroCard .heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroCard .heroImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.heroCard .heroContent {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.heroCard .heroContent h2 {
+  font-size: 22px;
+  color: #fd4261;
+}
+.heroCard .heroContent p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .heroCard {
+    padding: 32px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .heroCard {
+    padding: 16px;
+  }
+  .heroCard .heroContent {
+    padding: 8px;
+    gap: 12px;
+  }
+  .heroCard .heroContent h2 {
+    font-size: 16px;
+  }
+  .heroCard .heroContent p {
+    font-size: 12px;
+  }
+}

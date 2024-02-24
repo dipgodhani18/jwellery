@@ -1,0 +1,83 @@
+.teamMainContainer {
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(227, 227, 227);
+}
+.teamCard .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.teamCard .imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+.teamCard .contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  text-align: center;
+  flex-direction: column;
+}
+.teamCard .contentContainer h2 {
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fd4261;
+}
+.teamCard .contentContainer span {
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: gray;
+}
+.teamCard .contentContainer ul {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  padding: 12px 0px;
+  color: gray;
+}
+.teamCard .contentContainer ul i:hover {
+  transition: 0.6s;
+  color: #fd4261;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .teamMainContainer {
+    padding: 16px;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  /* .teamCard .contentContainer ul {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 12px 0px;
+    color: gray;
+  } */
+}
